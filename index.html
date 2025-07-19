@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz App</h1>
+
+    <div id="quiz-box">
+      <div id="timer">Time Left: <span id="time">10</span>s</div>
+      <div id="question">Loading question...</div>
+      <div id="options"></div>
+      <button id="next-btn" disabled>Next</button>
+      <div id="feedback"></div>
+    </div>
+
+    <div id="score-box" class="hidden">
+      <h2>Quiz Completed!</h2>
+      <p>Your Score: <span id="final-score"></span></p>
+      <p id="badge"></p>
+      <button onclick="location.reload()">Restart</button>
+    </div>
+  </div>
+
+  <audio id="correct-sound" src="correct.mp3" preload="auto"></audio>
+  <audio id="wrong-sound" src="wrong.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
